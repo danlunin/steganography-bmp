@@ -1,6 +1,5 @@
 # steganography-bmp
 Utility for steganography in BMP format.
-#Examples:
 # Injection 
 Inject files Che.bmp, text.txt, new_text.txt into file Dog.bmp by r:g:b=3:1:1 and result(image with secret information) in output.bmp
 $ python3 BMP.py -i Dog.bmp -o output_bmp.bmp -b 311 --files Che.bmp text.txt new_text.txt
