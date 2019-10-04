@@ -1,5 +1,6 @@
 # steganography-bmp
-Utility for steganography in BMP format.
+This utility can hide your secret message behind the image file in BMP format using steganography.
+
 # Injection 
 Inject files Che.bmp, text.txt, new_text.txt into file Dog.bmp by r:g:b=3:1:1 and result(image with secret information) in output.bmp
 $ python3 BMP.py -i Dog.bmp -o output_bmp.bmp -b 311 --files Che.bmp text.txt new_text.txt
@@ -11,5 +12,5 @@ file2.doc
 file3.bmp
 
 # Unpacking data
-Unpacking from output.bmp by mask '*.txt' and resultedfiles into directory "data" data
+Unpacking from output.bmp by mask '*.txt' and resulted files into directory "data" data
 $ python3 BMP.py -e -i output.bmp -f *.txt -force -o folder
